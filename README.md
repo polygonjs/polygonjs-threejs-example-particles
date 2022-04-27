@@ -3,7 +3,7 @@ This repository is a continuation to the [tutorial](https://polygonjs.com/docs/i
 
 Here we show how to integrate Polygonjs scenes which contain **particles system**.
 
-The main difference with particle system is that they require a WebGLRenderer to function. When you use a Polygonjs scene on its own, you would view it with its **viewer**. The viewer mostly takes care of rendering the scene to the screen, but it is also useful to other scene objects like the particles, as they need to render things off screen, in order to run the simulation itself.
+The main difference with particle system is that they require a WebGLRenderer to function. When you use a Polygonjs scene on its own, you would view it with its [viewer](https://polygonjs.com/docs/api/TypedViewer). The viewer mostly takes care of rendering the scene to the screen, but it is also useful to other scene objects like the particles, as they need to render things off screen, in order to run the simulation.
 
 ## Recommended approach: Use Polygonjs Viewer
 
@@ -21,9 +21,9 @@ const loadedData = await loadSceneAsync_scene_01({
 });
 ```
 
-This will create a renderer for you, mount it on the element 'app', and you will then see the particles.
+This will create a viewer for you, mount it on the element 'app', and you will then see the particles.
 
-From then, you can simply add your threejs scene into the Polygonjs one.
+From then, you can simply add your threejs scene into the Polygonjs one, as shown in the [previous tutorial](https://polygonjs.com/docs/integrations/threejs).
 
 ## Other approach: Use Threejs Renderer
 
@@ -35,7 +35,7 @@ loadedData.scene.registerRenderer(renderer);
 
 This will allow the particles to simulate as expected.
 
-But there is still one caveat, which is that - just like we say in the [previous tutorial](https://polygonjs.com/docs/integrations/threejs) - some events, like mouse and keyboard events, are handled by the viewer. So if you need to simulate particles that follow your mouse for instance, this will not work.
+But there is still one caveat. Just like we saw in the [previous tutorial](https://polygonjs.com/docs/integrations/threejs), some events - like mouse and keyboard events - are handled by the viewer. So if you need to simulate particles that follow your mouse for instance, this will not work. This is one of the reasons why the first approach is recommended.
 
 
 # Open app
