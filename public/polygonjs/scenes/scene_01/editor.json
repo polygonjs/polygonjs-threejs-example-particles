@@ -1,0 +1,164 @@
+{
+	"multiple_panel": {
+		"split_ratio": 0.5,
+		"split_panel0": {
+			"split_ratio": 0.5,
+			"split_panel0": {
+				"panelTypes": [
+					"viewer"
+				],
+				"currentPanelIndex": 0,
+				"panel_data": {
+					"camera": "/perspectiveCamera1",
+					"linkIndex": 1
+				}
+			},
+			"split_panel1": {
+				"panelTypes": [
+					"params"
+				],
+				"currentPanelIndex": 0,
+				"panel_data": {
+					"active_folder": null,
+					"linkIndex": 1
+				}
+			},
+			"split_mode": "vertical"
+		},
+		"split_panel1": {
+			"panelTypes": [
+				"network",
+				"params",
+				"viewer"
+			],
+			"currentPanelIndex": 0,
+			"panel_data": {
+				"camera": {
+					"position": {
+						"x": -179.905808477237,
+						"y": -166.75824175824172
+					},
+					"zoom": 0.6370000000000001
+				},
+				"history": {
+					"32": {
+						"position": {
+							"x": -48,
+							"y": -22
+						},
+						"zoom": 0.6370000000000001
+					},
+					"98": {
+						"position": {
+							"x": -179.905808477237,
+							"y": -166.75824175824172
+						},
+						"zoom": 0.6370000000000001
+					},
+					"202": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.6370000000000001
+					},
+					"246": {
+						"position": {
+							"x": -86.34222919937204,
+							"y": 98.54788069073783
+						},
+						"zoom": 0.6370000000000001
+					},
+					"500": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.6370000000000001
+					},
+					"519": {
+						"position": {
+							"x": 0,
+							"y": 0
+						},
+						"zoom": 0.6370000000000001
+					},
+					"522": {
+						"position": {
+							"x": -76.9230769230769,
+							"y": 1.5698587127158552
+						},
+						"zoom": 0.6370000000000001
+					}
+				},
+				"linkIndex": 1
+			}
+		},
+		"split_mode": "horizontal"
+	},
+	"currentNodes": [
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1",
+		"/geo1"
+	],
+	"navigationHistory": {
+		"nodePaths": {
+			"1": [
+				"/geo1",
+				"/geo1/MAT",
+				"/geo1/MAT/pointsParticles",
+				"/geo1/MAT",
+				"/geo1",
+				"/geo1/particlesSystemGpu1",
+				"/geo1",
+				"/geo1/particlesSystemGpu2",
+				"/geo1",
+				"/geo1/particlesSystemGpu2",
+				"/geo1"
+			],
+			"2": [
+				"/geo1"
+			],
+			"3": [
+				"/geo1"
+			],
+			"4": [
+				"/geo1"
+			],
+			"5": [
+				"/geo1"
+			],
+			"6": [
+				"/geo1"
+			],
+			"7": [
+				"/geo1"
+			],
+			"8": [
+				"/geo1"
+			]
+		},
+		"index": {
+			"1": 10,
+			"2": 0,
+			"3": 0,
+			"4": 0,
+			"5": 0,
+			"6": 0,
+			"7": 0,
+			"8": 0
+		}
+	},
+	"fullscreenPanelId": null,
+	"saveOptions": {
+		"createExport": true,
+		"compressJs": true,
+		"publishToIntegrations": false
+	},
+	"paramsModal": []
+}

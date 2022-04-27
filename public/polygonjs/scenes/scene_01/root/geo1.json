@@ -1,0 +1,37 @@
+{
+	"type": "geo",
+	"nodes": {
+		"scatter1": {
+			"type": "scatter",
+			"params": {
+				"pointsCount": 383
+			},
+			"inputs": [
+				"sphere1"
+			]
+		},
+		"sphere1": {
+			"type": "sphere"
+		},
+		"instance1": {
+			"type": "instance",
+			"params": {
+				"applyMaterial": 0,
+				"material": "../MAT/meshLambertBuilder_INSTANCES"
+			},
+			"inputs": [
+				"box1",
+				"scatter1"
+			]
+		},
+		"box1": {
+			"type": "box",
+			"params": {
+				"size": 0.05
+			}
+		}
+	},
+	"flags": {
+		"display": true
+	}
+}
