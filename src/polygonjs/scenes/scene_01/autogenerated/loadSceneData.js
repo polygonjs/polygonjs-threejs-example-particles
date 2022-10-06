@@ -1,25 +1,49 @@
-import {SceneDataManifestImporter} from '@polygonjs/polygonjs/dist/src/engine/io/manifest/import/SceneData';
+import { SceneDataManifestImporter } from "@polygonjs/polygonjs/dist/src/engine/io/manifest/import/SceneData";
 const manifest = {
-	properties: '1651056248031',
-	root: '1651056248031',
-	nodes: {
-		geo1: '1651056248031',
-		'geo1/particlesSystemGpu1': '1651056248031',
-		'geo1/MAT': '1651056248031',
-		'geo1/MAT/pointsParticles': '1651056248031',
-		'geo1/MAT/meshLambertBuilder_INSTANCES': '1651056248031',
-		'geo1/particlesSystemGpu2': '1651056248031',
-		perspectiveCamera1: '1651056248031',
-		'perspectiveCamera1/events1': '1651056248031',
-	},
+  properties: "1665071168740",
+  root: "1665071168740",
+  nodes: {
+    geo1: "1651056248031",
+    "geo1/particlesSystemGpu1": "1665071168740",
+    "geo1/MAT": "1665071168740",
+    "geo1/MAT/pointsParticles": "1665071168740",
+    "geo1/MAT/meshLambertBuilder_INSTANCES": "1665071168740",
+    "geo1/particlesSystemGpu2": "1665071168740",
+    perspectiveCamera1: "1651056248031",
+    "perspectiveCamera1/events1": "1665071168740",
+  },
+  shaders: {
+    "/geo1/particlesSystemGpu1": { position: "1665071168740" },
+    "/geo1/MAT/pointsParticles": {
+      vertex: "1665071168740",
+      fragment: "1665071168740",
+      "customDistanceMaterial.vertex": "1665071168740",
+      "customDistanceMaterial.fragment": "1665071168740",
+      "customDepthMaterial.vertex": "1665071168740",
+      "customDepthMaterial.fragment": "1665071168740",
+      "customDepthDOFMaterial.vertex": "1665071168740",
+      "customDepthDOFMaterial.fragment": "1665071168740",
+    },
+    "/geo1/MAT/meshLambertBuilder_INSTANCES": {
+      vertex: "1665071168740",
+      fragment: "1665071168740",
+      "customDepthMaterial.vertex": "1665071168740",
+      "customDepthMaterial.fragment": "1665071168740",
+      "customDistanceMaterial.vertex": "1665071168740",
+      "customDistanceMaterial.fragment": "1665071168740",
+      "customDepthDOFMaterial.vertex": "1665071168740",
+      "customDepthDOFMaterial.fragment": "1665071168740",
+    },
+    "/geo1/particlesSystemGpu2": { instancePosition: "1665071168740" },
+  },
 };
 
 export const loadSceneData_scene_01 = async (options = {}) => {
-	const sceneDataRoot = options.sceneDataRoot || './polygonjs/scenes';
-	return await SceneDataManifestImporter.importSceneData({
-		sceneName: 'scene_01',
-		urlPrefix: sceneDataRoot + '/' + 'scene_01',
-		manifest: manifest,
-		onProgress: options.onProgress,
-	});
+  const sceneDataRoot = options.sceneDataRoot || "./polygonjs/scenes";
+  return await SceneDataManifestImporter.importSceneData({
+    sceneName: "scene_01",
+    urlPrefix: sceneDataRoot + "/scene_01",
+    manifest: manifest,
+    onProgress: options.onProgress,
+  });
 };

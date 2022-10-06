@@ -6,9 +6,7 @@
 			"params": {
 				"pointsCount": 383
 			},
-			"inputs": [
-				"sphere1"
-			]
+			"inputs": ["sphere1"]
 		},
 		"sphere1": {
 			"type": "sphere"
@@ -19,10 +17,7 @@
 				"applyMaterial": 0,
 				"material": "../MAT/meshLambertBuilder_INSTANCES"
 			},
-			"inputs": [
-				"box1",
-				"scatter1"
-			]
+			"inputs": ["box1", "scatter1"]
 		},
 		"box1": {
 			"type": "box",

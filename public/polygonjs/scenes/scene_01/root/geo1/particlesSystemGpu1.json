@@ -19,11 +19,7 @@
 			"params": {
 				"add0": {
 					"type": "vector3",
-					"default_value": [
-						0,
-						0,
-						0
-					],
+					"default_value": [0, 0, 0],
 					"options": {
 						"spare": true,
 						"editable": false
@@ -31,20 +27,12 @@
 				},
 				"add1": {
 					"type": "vector3",
-					"default_value": [
-						0,
-						0,
-						0
-					],
+					"default_value": [0, 0, 0],
 					"options": {
 						"spare": true,
 						"editable": true
 					},
-					"raw_input": [
-						0,
-						0.01,
-						0
-					]
+					"raw_input": [0, 0.01, 0]
 				}
 			},
 			"inputs": [
@@ -77,16 +65,11 @@
 	"params": {
 		"material": "../MAT/pointsParticles"
 	},
-	"inputs": [
-		"scatter1"
-	],
+	"inputs": ["scatter1"],
 	"flags": {
 		"display": true
 	},
 	"persisted_config": {
-		"shaders_by_name": {
-			"position": "#include <common>\n\n// removed:\n//// INSERT DEFINE\n\n\n\n// /geo1/particlesSystemGpu1/globals1\nuniform sampler2D texture_position;\n\n\n\n\n\nvoid main() {\n\n\tvec2 particleUV = (gl_FragCoord.xy / resolution.xy);\n\n// removed:\n//\t// INSERT BODY\n\n\n\n\t// /geo1/particlesSystemGpu1/globals1\n\tvec3 v_POLY_globals1_position = texture2D( texture_position, particleUV ).xyz;\n\t\n\t// /geo1/particlesSystemGpu1/add1\n\tvec3 v_POLY_add1_sum = (v_POLY_globals1_position + vec3(0.0, 0.01, 0.0));\n\t\n\t// /geo1/particlesSystemGpu1/output1\n\tgl_FragColor.xyz = v_POLY_add1_sum;\n\n\n\n\n}"
-		},
 		"texture_allocations": {
 			"writable": [
 				{
@@ -94,10 +77,7 @@
 						{
 							"name": "position",
 							"size": 3,
-							"nodes": [
-								"/geo1/particlesSystemGpu1/output1",
-								"/geo1/particlesSystemGpu1/globals1"
-							]
+							"nodes": ["/geo1/particlesSystemGpu1/output1", "/geo1/particlesSystemGpu1/globals1"]
 						}
 					]
 				}
@@ -125,6 +105,7 @@
 			"stencilFail": 7680,
 			"stencilZFail": 7680,
 			"stencilZPass": 7680,
+			"fog": false,
 			"glslVersion": null,
 			"uniforms": {},
 			"vertexShader": "void main() {\n\tgl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );\n}",

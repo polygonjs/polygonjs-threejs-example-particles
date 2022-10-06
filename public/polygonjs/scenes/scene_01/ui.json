@@ -1,190 +1,103 @@
 {
 	"nodes": {
 		"hemisphereLight1": {
-			"pos": [
-				150,
-				100
-			]
+			"pos": [150, 100]
 		},
 		"spotLight1": {
-			"pos": [
-				150,
-				200
-			]
+			"pos": [150, 200]
 		},
 		"geo1": {
-			"pos": [
-				-50,
-				-150
-			],
+			"pos": [-50, -150],
 			"nodes": {
 				"scatter1": {
-					"pos": [
-						-100,
-						-50
-					]
+					"pos": [-100, -50]
 				},
 				"sphere1": {
-					"pos": [
-						-100,
-						-250
-					]
+					"pos": [-100, -250]
 				},
 				"instance1": {
-					"pos": [
-						50,
-						350
-					]
+					"pos": [50, 350]
 				},
 				"box1": {
-					"pos": [
-						-50,
-						250
-					]
+					"pos": [-50, 250]
 				},
 				"particlesSystemGpu1": {
-					"pos": [
-						-450,
-						100
-					],
+					"pos": [-450, 100],
 					"nodes": {
 						"globals1": {
-							"pos": [
-								-200,
-								0
-							]
+							"pos": [-200, 0]
 						},
 						"output1": {
-							"pos": [
-								200,
-								0
-							]
+							"pos": [200, 0]
 						},
 						"add1": {
-							"pos": [
-								0,
-								0
-							]
+							"pos": [0, 0]
 						}
 					}
 				},
 				"MAT": {
-					"pos": [
-						-650,
-						100
-					],
+					"pos": [-650, 100],
 					"nodes": {
 						"pointsParticles": {
-							"pos": [
-								0,
-								0
-							],
+							"pos": [0, 0],
 							"nodes": {
 								"output1": {
-									"pos": [
-										200,
-										0
-									]
+									"pos": [200, 0]
 								},
 								"globals1": {
-									"pos": [
-										-200,
-										0
-									]
+									"pos": [-200, 0]
 								},
 								"constant_point_size": {
-									"pos": [
-										0,
-										0
-									]
+									"pos": [0, 0]
 								}
 							}
 						},
 						"meshLambertBuilder_INSTANCES": {
-							"pos": [
-								0,
-								0
-							],
+							"pos": [0, 0],
 							"nodes": {
 								"instanceTransform1": {
-									"pos": [
-										0,
-										0
-									]
+									"pos": [0, 0]
 								},
 								"output1": {
-									"pos": [
-										200,
-										0
-									]
+									"pos": [200, 0]
 								},
 								"globals1": {
-									"pos": [
-										-200,
-										0
-									]
+									"pos": [-200, 0]
 								}
 							}
 						}
 					}
 				},
 				"particlesSystemGpu2": {
-					"pos": [
-						50,
-						450
-					],
+					"pos": [50, 450],
 					"nodes": {
 						"globals1": {
-							"pos": [
-								-200,
-								0
-							]
+							"pos": [-200, 0]
 						},
 						"output1": {
-							"pos": [
-								200,
-								0
-							]
+							"pos": [200, 0]
 						},
 						"attribute1": {
-							"pos": [
-								-200,
-								-150
-							]
+							"pos": [-200, -150]
 						},
 						"attribute2": {
-							"pos": [
-								200,
-								-150
-							]
+							"pos": [200, -150]
 						},
 						"add1": {
-							"pos": [
-								0,
-								-150
-							]
+							"pos": [0, -150]
 						}
 					}
 				}
 			}
 		},
 		"perspectiveCamera1": {
-			"pos": [
-				-200,
-				100
-			],
+			"pos": [-200, 100],
 			"nodes": {
 				"events1": {
-					"pos": [
-						-200,
-						50
-					],
+					"pos": [-200, 50],
 					"nodes": {
 						"cameraOrbitControls1": {
-							"pos": [
-								150,
-								50
-							]
+							"pos": [150, 50]
 						}
 					}
 				}

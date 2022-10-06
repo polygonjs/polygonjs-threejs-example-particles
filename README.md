@@ -10,13 +10,13 @@ The main difference with particle system is that they require a WebGLRenderer to
 So, to make things as easy as possible, it is recommended that you create a viewer. In order to do that, all you need is to change the call 
 
 ```
-const loadedData = await loadSceneAsync_scene_01();
+const loadedData = await loadScene_scene_01();
 ```
 
 to:
 
 ```
-const loadedData = await loadSceneAsync_scene_01({
+const loadedData = await loadScene_scene_01({
   domElement: 'app'
 });
 ```
