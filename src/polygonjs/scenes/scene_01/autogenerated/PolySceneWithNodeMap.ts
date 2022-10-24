@@ -127,6 +127,7 @@ export interface PolySceneProps_scene_01 {
   "spotLight1--shadowNear"?: ParamValueSerializedTypeMap["float"];
   "spotLight1--shadowFar"?: ParamValueSerializedTypeMap["float"];
   "spotLight1--shadowRadius"?: ParamValueSerializedTypeMap["float"];
+  "spotLight1--debugShadow"?: ParamValueSerializedTypeMap["boolean"];
   "spotLight1--volumetric"?: ParamValueSerializedTypeMap["folder"];
   "spotLight1--tvolumetric"?: ParamValueSerializedTypeMap["boolean"];
   "spotLight1--volAttenuation"?: ParamValueSerializedTypeMap["float"];
