@@ -65,7 +65,8 @@
 		"onBeforeCompileDataJSONWithoutShaders": {
 			"paramConfigs": [],
 			"timeDependent": false,
-			"resolutionDependent": false
+			"resolutionDependent": false,
+			"raymarchingLightsWorldCoordsDependent": false
 		},
 		"customMaterials": {
 			"customDistanceMaterial": {
@@ -144,7 +145,8 @@
 				"onBeforeCompileDataJSONWithoutShaders": {
 					"paramConfigs": [],
 					"timeDependent": false,
-					"resolutionDependent": false
+					"resolutionDependent": false,
+					"raymarchingLightsWorldCoordsDependent": false
 				}
 			},
 			"customDepthMaterial": {
@@ -223,7 +225,8 @@
 				"onBeforeCompileDataJSONWithoutShaders": {
 					"paramConfigs": [],
 					"timeDependent": false,
-					"resolutionDependent": false
+					"resolutionDependent": false,
+					"raymarchingLightsWorldCoordsDependent": false
 				}
 			},
 			"customDepthDOFMaterial": {
@@ -274,7 +277,8 @@
 				"onBeforeCompileDataJSONWithoutShaders": {
 					"paramConfigs": [],
 					"timeDependent": false,
-					"resolutionDependent": false
+					"resolutionDependent": false,
+					"raymarchingLightsWorldCoordsDependent": false
 				}
 			}
 		}
